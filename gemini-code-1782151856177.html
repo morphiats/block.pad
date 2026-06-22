@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blockPad — Crypto-Funded Real Estate Settlement Infrastructure</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .glow-green {
+            box-shadow: 0 0 50px -10px rgba(34, 197, 94, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-neutral-950 text-neutral-100 font-sans min-h-screen flex flex-col justify-between antialiased selection:bg-green-500 selection:text-neutral-950">
+
+    <!-- Background Gradients -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 left-1/4 w-[600px] h-[600px] bg-green-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-indigo-500/5 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="w-full max-w-6xl mx-auto px-6 py-8 relative z-10 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <!-- Simulated Logo Asset Box -->
+            <div class="w-9 h-9 bg-neutral-900 border border-neutral-800 rounded-lg flex items-center justify-center font-bold text-green-400 text-sm tracking-tighter shadow-inner">
+                bp
+            </div>
+            <span class="font-black text-lg tracking-wider text-white">block <span class="text-green-400">Pad</span></span>
+        </div>
+        <div class="hidden sm:flex items-center space-x-6 text-xs font-semibold tracking-wider text-neutral-400">
+            <span>ADA CORE</span>
+            <span class="text-neutral-600">•</span>
+            <span>BTC & ETH GATEWAY</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="w-full max-w-4xl mx-auto px-6 py-12 text-center relative z-10 flex-grow flex flex-col justify-center items-center">
+        
+        <!-- Live Status Badge -->
+        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-green-400 bg-green-500/10 rounded-full border border-green-500/20 mb-8 backdrop-blur-md">
+            <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
+            Phase 1 Beachhead — Launching 2026
+        </span>
+
+        <!-- Hero Headline -->
+        <h1 class="text-4xl sm:text-6xl font-black tracking-tight max-w-3xl leading-tight sm:leading-none mb-6 bg-gradient-to-b from-white via-neutral-200 to-neutral-500 bg-clip-text text-transparent">
+            Make BTC & ETH the practical way to buy real estate.
+        </h1>
+
+        <!-- Pitch -->
+        <p class="text-neutral-400 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+            The legally compliant settlement infrastructure connecting multi-chain crypto wealth to worldwide property transactions. Powered by deterministic, battle-tested Cardano smart contracts.
+        </p>
+
+        <!-- Waitlist Capture Block -->
+        <div class="w-full max-w-md mx-auto mb-12">
+            <form class="bg-neutral-900/80 p-2 rounded-2xl border border-neutral-800 backdrop-blur-xl glow-green flex flex-col sm:flex-row gap-2" onsubmit="event.preventDefault(); alert('Welcome to the blockPad inner circle. Core team updates will follow.');">
+                <input 
+                    type="email" 
+                    required 
+                    placeholder="Enter institutional or personal email" 
+                    class="w-full bg-transparent px-4 py-3 text-sm text-white placeholder-neutral-500 focus:outline-none rounded-xl"
+                />
+                <button 
+                    type="submit" 
+                    class="w-full sm:w-auto bg-green-500 hover:bg-green-400 active:bg-green-600 text-neutral-950 font-bold text-sm px-6 py-3 rounded-xl transition duration-200 shadow-lg shadow-green-500/20 whitespace-nowrap"
+                >
+                    Request Early Access
+                </button>
+            </form>
+            <p class="text-[11px] text-neutral-500 mt-3 tracking-wide">
+                Prioritizing property buyers, asset tokenization sponsors, and PropTech developers.
+            </p>
+        </div>
+
+        <!-- Infrastructure Pillars -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-3xl text-left border-t border-neutral-900 pt-10">
+            <div class="p-4 rounded-xl bg-neutral-900/30 border border-neutral-900">
+                <h3 class="text-xs font-bold text-green-400 tracking-wider uppercase mb-1">01 / Multi-Chain Escrow</h3>
+                <p class="text-xs text-neutral-400 leading-relaxed">Lock BTC or ETH directly into secure Cardano-native smart contracts via modular liquidity rails.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-neutral-900/30 border border-neutral-900">
+                <h3 class="text-xs font-bold text-green-400 tracking-wider uppercase mb-1">02 / Compliance First</h3>
+                <p class="text-xs text-neutral-400 leading-relaxed">Integrated identity verification, sanctions screening, and legal provenance engines built in from day one.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-neutral-900/30 border border-neutral-900">
+                <h3 class="text-xs font-bold text-green-400 tracking-wider uppercase mb-1">03 / Developer API</h3>
+                <p class="text-xs text-neutral-400 leading-relaxed">White-label our Aiken contract layers for third-party platforms, title agencies, and SPV platforms.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-6xl mx-auto px-6 py-8 relative z-10 text-center sm:flex sm:justify-between sm:text-left border-t border-neutral-900/60 text-xs text-neutral-600">
+        <p>&copy; 2026 blockPad Platform. Confidential | Version 1.0 Infrastructure Framework.</p>
+        <div class="mt-2 sm:mt-0 space-x-4">
+            <span class="text-neutral-500">Built on Cardano</span>
+        </div>
+    </footer>
+
+</body>
+</html>
