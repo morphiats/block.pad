@@ -23,8 +23,20 @@
       animation: liquidityFlow 15s ease infinite;
     }
   </style>
+  <style>
+    @keyframes liquidityFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animate-liquidity {
+      background: linear-gradient(-45deg, #020617, #064e3b, #022c22, #0f172a) !important;
+      background-size: 400% 400% !important;
+      animation: liquidityFlow 15s ease infinite !important;
+    }
+  </style>
 </head>
-<body class="bg-neutral-950 text-neutral-100 font-sans min-h-screen flex flex-col justify-between antialiased selection:bg-green-500 selection:text-neutral-950">
+<body class="animate-liquidity" class="bg-neutral-950 text-neutral-100 font-sans min-h-screen flex flex-col justify-between antialiased selection:bg-green-500 selection:text-neutral-950">
 
     <!-- Background Gradients -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full overflow-hidden pointer-events-none z-0">
